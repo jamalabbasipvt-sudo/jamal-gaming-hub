@@ -26,4 +26,16 @@ html, body {
   align-items: center;
   z-index: 10;
 }
+#coinsUI {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+  background: rgba(0,0,0,0.4);
+  padding: 8px 14px;
+  border-radius: 10px;
+  z-index: 5;
+}
+
 
