@@ -1,28 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>J RUN 3D</title>
-
-  <!-- Babylon.js CDN -->
-  <script src="https://cdn.babylonjs.com/babylon.js"></script>
-
+  <meta charset="UTF-8" />
+  <title>J Runner Game</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <!-- Loader Screen -->
-  <div id="loader">
-    <h1>J RUN</h1>
-    <p>Loading forest...</p>
-  </div>
+  <!-- Score -->
+  <div id="hud">J Coins: <span id="coins">0</span></div>
 
   <!-- Game Canvas -->
-  <canvas id="renderCanvas"></canvas>
-  <div id="coinsUI">🪙 J Coins: 0</div>
+  <canvas id="gameCanvas"></canvas>
 
+  <!-- Babylon Engine -->
+  <script src="https://cdn.babylonjs.com/babylon.js"></script>
 
+  <!-- Game Script -->
   <script src="js/game.js"></script>
+
 </body>
 </html>
+
 
