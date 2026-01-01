@@ -2,21 +2,31 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>J RUN | Jamal Gaming</title>
-
-  <!-- Babylon.js -->
-  <script src="https://cdn.babylonjs.com/babylon.js"></script>
-
+  <title>J RUN</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<div id="ui">
-  <div id="coins">🪙 J Coins: 0</div>
-  <div id="hint">← → Move | SPACE Jump</div>
+<!-- START SCREEN -->
+<div id="startScreen">
+  <h1>J RUN</h1>
+  <button onclick="startGame()">PLAY</button>
 </div>
 
-<canvas id="renderCanvas"></canvas>
+<!-- LOADER -->
+<div id="loader" class="hidden">
+  <h1>J RUN</h1>
+  <div class="loader-bar">
+    <div class="loader-fill"></div>
+  </div>
+  <p>Loading forest...</p>
+</div>
+
+<!-- UI -->
+<div id="ui" class="hidden">
+  <div>🪙 J Coins: <span id="coinCount">0</span></div>
+  <div>Speed: <span id="speed">1</span></div>
+</div>
 
 <script src="js/game.js"></script>
 </body>
