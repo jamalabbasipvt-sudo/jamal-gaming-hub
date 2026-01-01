@@ -26,7 +26,18 @@ function init() {
   document.body.appendChild(canvas);
   ctx = canvas.getContext("2d");
 
-  player = { x: canvas.width/2, y: canvas.height-120, w: 40, h: 80 };
+  player = {
+  x: canvas.width / 2,
+  y: canvas.height - 140,
+  w: 40,
+  h: 80,
+  vy: 0,
+  gravity: 1.2,
+  jumpPower: -18,
+  onGround: true,
+  legFrame: 0
+};
+
 
   gameRunning = true;
   loop();
